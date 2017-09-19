@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "declaration": false,
+      "experimentalDecorators": true,
+      "jsx": "react",
+      "module": "commonjs",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noResolve": false,
+      "outDir": "./dist/",
+      "reactNamespace": "RX",
+      "target": "es5",
+      "types": [
+        "node"
+      ]
+    },
+    "exclude": [
+      "node_modules"
+    ],
+    "include": [
+      "./src/**/*"
+    ]
+  }

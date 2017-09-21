@@ -1,30 +1,32 @@
+import React = require('react');
 import RX = require('reactxp');
 
 type Style = RX.Types.ViewStyleRuleSet;
 
-const standardStyle = RX.Styles.createViewStyle({
+const standardStyle: Style = RX.Styles.createViewStyle({
     flex: 1,
     alignSelf: 'center',
     alignItems: 'flex-end',
 });
 
 export class Right extends RX.Component<RX.CommonStyledProps<Style>, {}> {
-//export class Container extends RX.View {
-    
-    render() {
-        let style :RX.Types.StyleRuleSetOrArray<Style> = standardStyle; 
-        
-        if(this.props.style)
+// export class Container extends RX.View {
+
+    render (): JSX.Element {
+        let style : RX.Types.StyleRuleSetOrArray<Style> = standardStyle;
+
+        if (this.props.style) {
             style = RX.Styles.combine(style, this.props.style);
+        }
 
         return (
-            <RX.View 
+            <RX.View
               { ...this.props }
               // ref={(view: ???) => {this._container = view}} //ref={c => (this._root = c)} - native-base
-              style={ style } 
+              style={ style }
             >
                 { this.props.children }
             </RX.View>
         );
     }
-}    
+}

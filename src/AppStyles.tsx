@@ -1,10 +1,9 @@
 import RX = require('reactxp');
 
-const deviceHeight = RX.UserInterface.measureWindow().height;
-const platform = RX.Platform.getType();
+// const deviceHeight: number = RX.UserInterface.measureWindow().height;
+const platform: RX.Types.PlatformType = RX.Platform.getType();
 
-
-const variables2 = {
+const variables2: any = {
     // theme background
     primary: '#01cca1',
     // header
@@ -16,53 +15,42 @@ const variables2 = {
     sidebar: '#252932',
     dark: 'rgba(0,0,0,0.8)',
     light: 'rgba(255,255,255,0.8)',
-}
-
+};
 
 export default {
     DefaultFontSize: 17,
-    
-    // New Variable
-    get btnPrimaryBg() {
+
+    // new variable
+    get btnPrimaryBg(): string {
         return this.brandPrimary;
     },
-    
+
     buttonPadding: 6,
 
-    // Font
+    // font
     fontFamily: (platform === 'ios') ? 'System' : 'Roboto',
-    
-    // Color
-    brandPrimary: variables2.primary,
-  
-    // InputGroup
-    inputFontSize: 15, //template 15 e NativeBase (src/theme/variables/platform.js) 17
-    inputBorderColor: '#fff', //template fff e NativeBase (src/theme/variables/platform.js) D9D5DC
 
-    get inputColor() : string {
+    // color
+    brandPrimary: variables2.primary,
+
+    // inputGroup
+    inputFontSize: 15, // template 15 e NativeBase (src/theme/variables/platform.js) 17
+    inputBorderColor: '#fff', // template fff e NativeBase (src/theme/variables/platform.js) D9D5DC
+
+    get inputColor(): string {
         return this.textColor;
     },
 
     inputHeightBase: 50,
-    
-    // Text
+
+    // text
     textColor: '#fff',
-    
-    // Other
+
+    // other
     borderRadiusBase: (platform === 'ios') ? 5 : 2,
-    borderWidth: 1, //template 1 e NativeBase (src/theme/variables/platform.js)  1 / RX.UserInterface.getPixelRatio()
+    borderWidth: 1, // template 1 e NativeBase (src/theme/variables/platform.js)  1 / RX.UserInterface.getPixelRatio()
 
-    
-    
-    
-    
     inputLineHeight: 24,
-   
-
-
-
-
-
 
 //     static color = {
 //         black: '#000000',
@@ -113,8 +101,6 @@ export default {
     //     })
     // }
 
-
-
     variables : {
         // theme background
         primary: variables2.primary,
@@ -128,7 +114,6 @@ export default {
         dark: variables2.dark,
         light: variables2.light,
     },
-
 
     // // theme background
     // const primary = color('#01cca1');
@@ -156,4 +141,4 @@ export default {
     //   dark: dark.hexString().toString(),
     //   light: light.hexString().toString(),
     // };
-}
+};

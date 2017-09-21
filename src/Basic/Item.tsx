@@ -1,5 +1,6 @@
+import React = require('react');
 import RX = require('reactxp');
-import AppStyles from "./../AppStyles";
+import AppStyles from './../AppStyles';
 
 type Style = RX.Types.ViewStyle;
 
@@ -21,20 +22,21 @@ const rounded  : Style = {
     borderColor: AppStyles.inputBorderColor,
 };
 
-export interface Props extends RX.CommonStyledProps<Style>  {
+export interface IProps extends RX.CommonStyledProps<Style>  {
     rounded?: boolean;
 }
 
+export class Item extends RX.Component<IProps, {}> {
+    render (): JSX.Element {
+        let style : RX.Types.StyleRuleSetOrArray<Style> = standardStyle;
 
-export class Item extends RX.Component<Props, {}> {
-    render() {
-        let style :RX.Types.StyleRuleSetOrArray<Style> = standardStyle;
+        if (this.props.rounded) {
+            style = RX.Styles.combine<Style>(style, rounded);
+        }
 
-        if(this.props.rounded)
-            style = RX.Styles.combine<Style>(style, rounded)
-
-        if(this.props.style)
+        if (this.props.style) {
             style = RX.Styles.combine(style, this.props.style);
+        }
 
         // style = RX.Styles.createViewStyle({
         //     borderWidth: AppStyles.borderWidth * 2,

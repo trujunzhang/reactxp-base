@@ -1,28 +1,30 @@
+import React = require('react');
 import RX = require('reactxp');
 
 type Style = RX.Types.ImageStyleRuleSet;
 
-const standardStyle = RX.Styles.createImageStyle({
+const standardStyle: Style = RX.Styles.createImageStyle({
     height: 17,
     width: 32,
 });
 
-export interface Props extends RX.CommonStyledProps<Style> {
+export interface IProps extends RX.CommonStyledProps<Style> {
     source: string;
 }
 
-export class Icon extends RX.Component<Props, {}> {
-    render() {
-        let style :RX.Types.StyleRuleSetOrArray<Style> = standardStyle; 
-        
-        if(this.props.style)
+export class Icon extends RX.Component<IProps, {}> {
+    render (): JSX.Element {
+        let style : RX.Types.StyleRuleSetOrArray<Style> = standardStyle;
+
+        if (this.props.style) {
             style = RX.Styles.combine(style, this.props.style);
+        }
 
         return (
-            <RX.Image 
+            <RX.Image
               { ...this.props }
-              style={ style } 
+              style={ style }
             />
         );
     }
-}    
+}

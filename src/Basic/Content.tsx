@@ -1,27 +1,29 @@
+import React = require('react');
 import RX = require('reactxp');
 
 type Style = RX.Types.ScrollViewStyleRuleSet;
 
-const standardStyle = RX.Styles.createViewStyle({
+const standardStyle: Style = RX.Styles.createViewStyle({
     flex: 1,
-    backgroundColor: "transparent",
+    backgroundColor: 'transparent',
 });
 
 export class Content extends RX.Component<RX.CommonStyledProps<Style>, {}> {
-//export class Content extends RX.ScrollView {
-    render() {
-        let style :RX.Types.StyleRuleSetOrArray<Style> = standardStyle; 
-        
-        if(this.props.style)
+// export class Content extends RX.ScrollView {
+    render (): JSX.Element {
+        let style : RX.Types.StyleRuleSetOrArray<Style> = standardStyle;
+
+        if (this.props.style) {
             style = RX.Styles.combine(style, this.props.style);
+        }
 
         return (
-            <RX.ScrollView 
+            <RX.ScrollView
               { ...this.props }
-              style={ style } 
+              style={ style }
             >
                 { this.props.children }
             </RX.ScrollView>
         );
     }
-}    
+}

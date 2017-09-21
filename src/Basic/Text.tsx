@@ -11,8 +11,7 @@ const standardStyle: Style = RX.Styles.createTextStyle({
 });
 
 // export class Container extends RX.Component<RX.CommonStyledProps<Style>, {}> {
-export class Text extends RX.Text {
-
+export abstract class Text extends RX.Text {
     render (): JSX.Element {
         let style : RX.Types.StyleRuleSetOrArray<Style> = standardStyle;
 

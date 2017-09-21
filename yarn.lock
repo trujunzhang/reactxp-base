@@ -212,9 +212,9 @@ prop-types@^15.5.9:
     fbjs "^0.8.9"
     loose-envify "^1.3.1"
 
-reactxp@^0.42.0:
-  version "0.42.3"
-  resolved "https://registry.yarnpkg.com/reactxp/-/reactxp-0.42.3.tgz#c6182647de870c6aaa643c2c3ab7a4ee8d92b57f"
+reactxp@^0.46.1:
+  version "0.46.1"
+  resolved "https://registry.yarnpkg.com/reactxp/-/reactxp-0.46.1.tgz#1b6f21d46c6f4c89091507a85eab43dfc9ca2c89"
   dependencies:
     "@types/lodash" "^4.14.66"
     assert "^1.3.0"

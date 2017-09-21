@@ -19,9 +19,9 @@ declare module 'reactxp-base' {
     export class Container extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}
     export class Content extends RX.Component<RX.CommonStyledProps<RX.Types.ScrollViewStyleRuleSet>, {}> {}
     export class Icon extends RX.Component<IIconProps, {}> {}
-    export class Input extends RX.TextInput {}
+    export abstract class Input extends RX.TextInput {}
     export class Left extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}
     export class Right extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}
-    export class Text extends RX.View {}
+    export abstract class Text extends RX.View {}
     export class Item extends RX.Component<IItemProps, {}> {}
 }

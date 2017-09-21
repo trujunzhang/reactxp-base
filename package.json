@@ -8,16 +8,32 @@
     "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true"
   },
   "dependencies": {
-    "reactxp": "^0.42.0"
+    "reactxp": "^0.46.1"
   },
   "peerDependencies": {
     "react-dom": "^16.0.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-19.0.0.tar.gz"
   },
   "devDependencies": {
-    "typescript": "2.4.2",
     "tslint": "^5.0.0",
-    "tslint-microsoft-contrib": "^4.0.1"
+    "tslint-microsoft-contrib": "^4.0.1",
+    "typescript": "2.4.2"
   },
-  "types": "src/typings/reactxp-base.d.ts"
+  "types": "src/typings/reactxp-base.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinils/reactxp-base.git"
+  },
+  "keywords": [
+    "NativeBase",
+    "native-base",
+    "reactxpbase",
+    "reactxp-base"
+  ],
+  "author": "Vinícius L Santos <vini_ls@hotmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinils/reactxp-base/issues"
+  },
+  "homepage": "https://github.com/vinils/reactxp-base#readme"
 }

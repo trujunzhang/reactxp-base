@@ -14,8 +14,8 @@ const standardStyle: Style = RX.Styles.createTextInputStyle({
     lineHeight: AppStyles.inputLineHeight,
 });
 
-export class Input extends RX.TextInput {
-    render (): JSX.Element {
+export abstract class Input extends RX.TextInput {
+    render(): JSX.Element {
         let style : RX.Types.StyleRuleSetOrArray<Style> = standardStyle;
 
         if (this.props.style) {

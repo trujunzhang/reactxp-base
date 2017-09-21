@@ -1,13 +1,13 @@
 declare module 'reactxp-base' {
     import RX = require('reactxp');
 
-    interface IIconProps extends RX.Types.ButtonProps  {
+    interface IButtonProps extends RX.Types.ButtonProps  {
         rounded?: boolean;
         primary?: boolean;
         transparent?: boolean;
-    }    
-
-    interface IButtonProps extends RX.CommonStyledProps<RX.Types.ImageStyleRuleSet> {
+    }
+    
+    interface IIconProps extends RX.CommonStyledProps<RX.Types.ImageStyleRuleSet> {
         source: string;
     }
 

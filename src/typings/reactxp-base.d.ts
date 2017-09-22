@@ -28,4 +28,6 @@ declare module 'reactxp-base' {
     export class Right extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}
     export abstract class Text extends RX.View {}
     export class Item extends RX.Component<IItemProps, {}> {}
+    export class Header extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}
+    export class Body extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}
 }

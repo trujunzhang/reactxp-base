@@ -3,18 +3,18 @@ import RX = require('reactxp');
 // const deviceHeight: number = RX.UserInterface.measureWindow().height;
 const platform: RX.Types.PlatformType = RX.Platform.getType();
 
-const variables2: any = {
+class variables2 {
     // theme background
-    primary: '#01cca1',
+    static primary: string = '#01cca1';
     // header
-    secondary: '#00c497',
-    info: '#5bc0de',
-    success: '#5cb85c',
-    danger: '#d9534f',
-    warning: '#f0ad4e',
-    sidebar: '#252932',
-    dark: 'rgba(0,0,0,0.8)',
-    light: 'rgba(255,255,255,0.8)',
+    static secondary: string = '#00c497';
+    static info: string = '#5bc0de';
+    static success: string = '#5cb85c';
+    static danger: string = '#d9534f';
+    static warning: string = '#f0ad4e';
+    static sidebar: string = '#252932';
+    static dark: string = 'rgba(0,0,0,0.8)';
+    static light: string = 'rgba(255,255,255,0.8)';
 };
 
 export default {

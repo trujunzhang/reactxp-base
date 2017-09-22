@@ -3,7 +3,7 @@ import RX = require('reactxp');
 // const deviceHeight: number = RX.UserInterface.measureWindow().height;
 const platform: RX.Types.PlatformType = RX.Platform.getType();
 
-class variables2 {
+class Variables2 {
     // theme background
     static primary: string = '#01cca1';
     // header
@@ -15,7 +15,7 @@ class variables2 {
     static sidebar: string = '#252932';
     static dark: string = 'rgba(0,0,0,0.8)';
     static light: string = 'rgba(255,255,255,0.8)';
-};
+}
 
 export default {
     DefaultFontSize: 17,
@@ -31,7 +31,7 @@ export default {
     fontFamily: (platform === 'ios') ? 'System' : 'Roboto',
 
     // color
-    brandPrimary: variables2.primary,
+    brandPrimary: Variables2.primary,
 
     // header
     toolbarHeight: (platform === 'ios') ? 64 : 56,
@@ -108,16 +108,16 @@ export default {
 
     variables : {
         // theme background
-        primary: variables2.primary,
+        primary: Variables2.primary,
         // header
-        secondary: variables2.secondary,
-        info: variables2.info,
-        success: variables2.success,
-        danger: variables2.danger,
-        warning: variables2.warning,
-        sidebar: variables2.sidebar,
-        dark: variables2.dark,
-        light: variables2.light,
+        secondary: Variables2.secondary,
+        info: Variables2.info,
+        success: Variables2.success,
+        danger: Variables2.danger,
+        warning: Variables2.warning,
+        sidebar: Variables2.sidebar,
+        dark: Variables2.dark,
+        light: Variables2.light,
     },
 
     // // theme background

@@ -15,9 +15,13 @@ declare module 'reactxp-base' {
         rounded?: boolean;
     }
 
+    interface IContentProps extends RX.CommonStyledProps<RX.Types.ScrollViewStyleRuleSet>  {
+        padder?: boolean;
+    }
+
     export class Button extends RX.Component<IButtonProps, {}> {}
     export class Container extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}
-    export class Content extends RX.Component<RX.CommonStyledProps<RX.Types.ScrollViewStyleRuleSet>, {}> {}
+    export class Content extends RX.Component<IContentProps, {}> {}
     export class Icon extends RX.Component<IIconProps, {}> {}
     export abstract class Input extends RX.TextInput {}
     export class Left extends RX.Component<RX.CommonStyledProps<RX.Types.ViewStyleRuleSet>, {}> {}

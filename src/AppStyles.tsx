@@ -33,6 +33,10 @@ export default {
     // color
     brandPrimary: variables2.primary,
 
+    // header
+    toolbarHeight: (platform === 'ios') ? 64 : 56,
+    toolbarDefaultBorder: '#aaa',
+    
     // inputGroup
     inputFontSize: 15, // template 15 e NativeBase (src/theme/variables/platform.js) 17
     inputBorderColor: '#fff', // template fff e NativeBase (src/theme/variables/platform.js) D9D5DC
@@ -49,7 +53,8 @@ export default {
     // other
     borderRadiusBase: (platform === 'ios') ? 5 : 2,
     borderWidth: 1, // template 1 e NativeBase (src/theme/variables/platform.js)  1 / RX.UserInterface.getPixelRatio()
-
+    contentPadding: 10,
+    
     inputLineHeight: 24,
 
 //     static color = {

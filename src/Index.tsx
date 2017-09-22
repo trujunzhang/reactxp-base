@@ -7,6 +7,8 @@ import { Button } from './Basic/Button';
 import { Left } from './Basic/Left';
 import { Right } from './Basic/Right';
 import { Text } from './Basic/Text';
+import { Header } from './Basic/Header';
+import { Body } from './Basic/Body';
 
 export {
     Container,
@@ -18,4 +20,6 @@ export {
     Left,
     Right,
     Text,
+    Header,
+    Body,
 };

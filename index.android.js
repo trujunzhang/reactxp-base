@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./dist/Index.js');
+module.exports = require('./dist/common/PluginBase.js');

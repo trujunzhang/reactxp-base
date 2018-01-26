@@ -1,39 +1,26 @@
 {
-  "name": "reactxp-base",
-  "version": "0.0.6",
-  "description": "ReactXP-Base",
-  "main": "index.js",
+  "name": "reactxp-navigation",
+  "version": "0.0.1",
+  "description": "Plugin for ReactXP that provides react-navigation for all platforms",
+  "author": "lejpr",
+  "license": "MIT",
   "scripts": {
-    "build": "npm run tslint && tsc",
-    "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true"
+    "build": "babel --presets react,es2015 --plugins transform-object-rest-spread,transform-es2015-arrow-functions,transform-class-properties -d dist/ src/"
   },
   "dependencies": {
-    "reactxp": "^0.51.2"
+	  "native-base": "^2.3.7"
   },
   "peerDependencies": {
     "react-dom": "^16.2.0",
-    "react-native": "^0.52.1"
+    "react-native": "^0.52.1",
+    "reactxp": "^0.51.2"
   },
   "devDependencies": {
-    "tslint": "^5.0.0",
-    "tslint-microsoft-contrib": "^4.0.1",
-    "typescript": "2.4.2"
-  },
-  "types": "src/typings/reactxp-base.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vinils/reactxp-base.git"
-  },
-  "keywords": [
-    "NativeBase",
-    "native-base",
-    "reactxpbase",
-    "reactxp-base"
-  ],
-  "author": "Vinícius L Santos <vini_ls@hotmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/vinils/reactxp-base/issues"
-  },
-  "homepage": "https://github.com/vinils/reactxp-base#readme"
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
+  }
 }

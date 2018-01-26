@@ -10,7 +10,7 @@ node_modules
 .npm
 
 # Build artifacts
-**/dist
+# **/dist
 
 # Miscellaneous user files
 *.user

@@ -8,11 +8,11 @@
     "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true"
   },
   "dependencies": {
-    "reactxp": "^0.46.1"
+    "reactxp": "^0.51.2"
   },
   "peerDependencies": {
-    "react-dom": "^16.0.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-19.0.0.tar.gz"
+    "react-dom": "^16.2.0",
+    "react-native": "^0.52.1"
   },
   "devDependencies": {
     "tslint": "^5.0.0",

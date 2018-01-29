@@ -1714,6 +1714,10 @@ react-native-easy-grid@0.1.15:
   dependencies:
     lodash "^4.11.1"
 
+react-native-image-sequence@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-image-sequence/-/react-native-image-sequence-0.5.0.tgz#deb9bb1db833b12c750dac0c512a34a801b5a695"
+
 react-native-iphone-x-helper@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.0.2.tgz#7dbca530930f7c1ce8633cc8fd13ba94102992e1"

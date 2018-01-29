@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-     value: true
+    value: true
 });
 exports.TabNavigator = exports.StackNavigator = exports.DrawerNavigator = undefined;
 

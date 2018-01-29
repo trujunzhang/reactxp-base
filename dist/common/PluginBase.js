@@ -3,9 +3,15 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.SwipeRow = exports.Root = exports.Segment = exports.TabHeading = exports.ActionSheet = exports.Toast = exports.View = exports.Text = exports.Grid = exports.Row = exports.Col = exports.Textarea = exports.Label = exports.Item = exports.DeckSwiper = exports.Separator = exports.ListItem = exports.List = exports.Picker = exports.FooterTab = exports.Tabs = exports.Tab = exports.Footer = exports.Content = exports.Container = exports.Switch = exports.Spinner = exports.H3 = exports.H2 = exports.H1 = exports.CardItem = exports.Card = exports.Thumbnail = exports.Radio = exports.CheckBox = exports.Badge = exports.Body = exports.Right = exports.Left = exports.Fab = exports.Title = exports.Input = exports.InputGroup = exports.Form = exports.Header = exports.Icon = exports.Button = exports.Drawer = exports.StyleProvider = undefined;
+exports.ImageSequence = exports.SwipeRow = exports.Root = exports.Segment = exports.TabHeading = exports.ActionSheet = exports.Toast = exports.View = exports.Text = exports.Grid = exports.Row = exports.Col = exports.Textarea = exports.Label = exports.Item = exports.DeckSwiper = exports.Separator = exports.ListItem = exports.List = exports.Picker = exports.FooterTab = exports.Tabs = exports.Tab = exports.Footer = exports.Content = exports.Container = exports.Switch = exports.Spinner = exports.H3 = exports.H2 = exports.H1 = exports.CardItem = exports.Card = exports.Thumbnail = exports.Radio = exports.CheckBox = exports.Badge = exports.Body = exports.Right = exports.Left = exports.Fab = exports.Title = exports.Input = exports.InputGroup = exports.Form = exports.Header = exports.Icon = exports.Button = exports.Drawer = exports.StyleProvider = undefined;
 
 var _nativeBase = require('native-base');
+
+var _reactNativeImageSequence = require('react-native-image-sequence');
+
+var _reactNativeImageSequence2 = _interopRequireDefault(_reactNativeImageSequence);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.StyleProvider = _nativeBase.StyleProvider;
 exports.Drawer = _nativeBase.Drawer;
@@ -56,3 +62,4 @@ exports.TabHeading = _nativeBase.TabHeading;
 exports.Segment = _nativeBase.Segment;
 exports.Root = _nativeBase.Root;
 exports.SwipeRow = _nativeBase.SwipeRow;
+exports.ImageSequence = _reactNativeImageSequence2.default;

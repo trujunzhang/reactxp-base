@@ -8,7 +8,8 @@
     "build": "babel --presets react,es2015 --plugins transform-object-rest-spread,transform-es2015-arrow-functions,transform-class-properties -d dist/ src/"
   },
   "dependencies": {
-	  "native-base": "^2.3.7"
+    "native-base": "^2.3.7",
+    "react-native-image-sequence": "^0.5.0"
   },
   "peerDependencies": {
     "react-dom": "^16.2.0",

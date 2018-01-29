@@ -50,6 +50,8 @@ import {
     SwipeRow
 } from 'native-base';
 
+import ImageSequence from 'react-native-image-sequence';
+
 export {
     StyleProvider,
     Drawer,
@@ -99,5 +101,6 @@ export {
     TabHeading,
     Segment,
     Root,
-    SwipeRow
+    SwipeRow,
+    ImageSequence
 };

@@ -52,11 +52,14 @@ import {
 
 import ImageSequence from 'react-native-image-sequence';
 
+import Icon as IonIcon from 'react-native-vector-icons/Ionicons'
+
 export {
     StyleProvider,
     Drawer,
     Button,
     Icon,
+    IonIcon ,
     Header,
     Form,
     InputGroup,

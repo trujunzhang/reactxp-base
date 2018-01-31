@@ -10,3 +10,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 https://github.com/GeekyAnts/NativeBase
 2. image-sequence
 https://github.com/madsleejensen/react-native-image-sequence
+3. react-native-linear-gradient
+https://github.com/react-native-community/react-native-linear-gradient

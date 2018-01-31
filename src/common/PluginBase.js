@@ -54,6 +54,8 @@ import ImageSequence from 'react-native-image-sequence';
 
 import {Icon as IonIcon} from 'react-native-vector-icons/Ionicons'
 
+import LinearGradient from 'react-native-linear-gradient'
+
 export {
     StyleProvider,
     Drawer,
@@ -105,5 +107,6 @@ export {
     Segment,
     Root,
     SwipeRow,
-    ImageSequence
+    ImageSequence,
+    LinearGradient
 };

@@ -19,6 +19,8 @@ var _reactNativeLinearGradient2 = _interopRequireDefault(_reactNativeLinearGradi
 
 var _reactNativeNavigation = require('react-native-navigation');
 
+var _reactNativeNavigation2 = _interopRequireDefault(_reactNativeNavigation);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.StyleProvider = _nativeBase.StyleProvider;
@@ -74,4 +76,4 @@ exports.SwipeRow = _nativeBase.SwipeRow;
 exports.IonIcon = _Ionicons.Icon;
 exports.ImageSequence = _reactNativeImageSequence2.default;
 exports.LinearGradient = _reactNativeLinearGradient2.default;
-exports.Navigation = _reactNativeNavigation.Navigation;
+exports.Navigation = _reactNativeNavigation2.default;

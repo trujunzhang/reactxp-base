@@ -41,6 +41,7 @@ import {
     Row,
     Grid,
     Text,
+    SubTitle,
     View,
     Toast,
     ActionSheet,
@@ -56,12 +57,20 @@ import {Icon as IonIcon} from 'react-native-vector-icons/Ionicons'
 
 import LinearGradient from 'react-native-linear-gradient'
 
+import {
+    withNavigation,
+    NavigationActions,
+    StackNavigator,
+    DrawerNavigator,
+    TabNavigator,
+    addNavigationHelpers
+} from 'react-navigation'
+
 export {
     StyleProvider,
     Drawer,
     Button,
     Icon,
-    IonIcon,
     Header,
     Form,
     InputGroup,
@@ -100,6 +109,7 @@ export {
     Row,
     Grid,
     Text,
+    SubTitle,
     View,
     Toast,
     ActionSheet,
@@ -107,6 +117,17 @@ export {
     Segment,
     Root,
     SwipeRow,
+    // react-native-vector-icons/Ionicons
+    IonIcon,
+    // react-native-image-sequence
     ImageSequence,
-    LinearGradient
+    // react-native-linear-gradient
+    LinearGradient,
+    // react-navigation
+    withNavigation,
+    NavigationActions,
+    StackNavigator,
+    TabNavigator,
+    DrawerNavigator,
+    addNavigationHelpers
 };

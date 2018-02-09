@@ -6,9 +6,9 @@
 * Base export for the Web implementation of the plugin.
 */
 
-import {StackNavigator} from './navigators/StackNavigator'
-import {DrawerNavigator} from './navigators/DrawerNavigator'
-import {TabNavigator} from './navigators/TabNavigator'
+const StackNavigator = {}
+const DrawerNavigator = {}
+const TabNavigator = {}
 
 export {
     DrawerNavigator,

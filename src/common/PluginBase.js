@@ -57,9 +57,7 @@ import {Icon as IonIcon} from 'react-native-vector-icons/Ionicons'
 
 import LinearGradient from 'react-native-linear-gradient'
 
-import {
-    Navigation
-} from 'react-native-navigation'
+import Navigation from 'react-native-navigation'
 
 export {
     StyleProvider,

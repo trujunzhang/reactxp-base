@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.LinearGradient = exports.ImageSequence = exports.SwipeRow = exports.Root = exports.Segment = exports.TabHeading = exports.ActionSheet = exports.Toast = exports.View = exports.Text = exports.Grid = exports.Row = exports.Col = exports.Textarea = exports.Label = exports.Item = exports.DeckSwiper = exports.Separator = exports.ListItem = exports.List = exports.Picker = exports.FooterTab = exports.Tabs = exports.Tab = exports.Footer = exports.Content = exports.Container = exports.Switch = exports.Spinner = exports.H3 = exports.H2 = exports.H1 = exports.CardItem = exports.Card = exports.Thumbnail = exports.Radio = exports.CheckBox = exports.Badge = exports.Body = exports.Right = exports.Left = exports.Fab = exports.Title = exports.Input = exports.InputGroup = exports.Form = exports.Header = exports.IonIcon = exports.Icon = exports.Button = exports.Drawer = exports.StyleProvider = undefined;
+exports.addNavigationHelpers = exports.DrawerNavigator = exports.TabNavigator = exports.StackNavigator = exports.NavigationActions = exports.withNavigation = exports.LinearGradient = exports.ImageSequence = exports.IonIcon = exports.SwipeRow = exports.Root = exports.Segment = exports.TabHeading = exports.ActionSheet = exports.Toast = exports.View = exports.SubTitle = exports.Text = exports.Grid = exports.Row = exports.Col = exports.Textarea = exports.Label = exports.Item = exports.DeckSwiper = exports.Separator = exports.ListItem = exports.List = exports.Picker = exports.FooterTab = exports.Tabs = exports.Tab = exports.Footer = exports.Content = exports.Container = exports.Switch = exports.Spinner = exports.H3 = exports.H2 = exports.H1 = exports.CardItem = exports.Card = exports.Thumbnail = exports.Radio = exports.CheckBox = exports.Badge = exports.Body = exports.Right = exports.Left = exports.Fab = exports.Title = exports.Input = exports.InputGroup = exports.Form = exports.Header = exports.Icon = exports.Button = exports.Drawer = exports.StyleProvider = undefined;
 
 var _nativeBase = require('native-base');
 
@@ -17,13 +17,14 @@ var _reactNativeLinearGradient = require('react-native-linear-gradient');
 
 var _reactNativeLinearGradient2 = _interopRequireDefault(_reactNativeLinearGradient);
 
+var _reactNavigation = require('react-navigation');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.StyleProvider = _nativeBase.StyleProvider;
 exports.Drawer = _nativeBase.Drawer;
 exports.Button = _nativeBase.Button;
 exports.Icon = _nativeBase.Icon;
-exports.IonIcon = _Ionicons.Icon;
 exports.Header = _nativeBase.Header;
 exports.Form = _nativeBase.Form;
 exports.InputGroup = _nativeBase.InputGroup;
@@ -62,6 +63,7 @@ exports.Col = _nativeBase.Col;
 exports.Row = _nativeBase.Row;
 exports.Grid = _nativeBase.Grid;
 exports.Text = _nativeBase.Text;
+exports.SubTitle = _nativeBase.SubTitle;
 exports.View = _nativeBase.View;
 exports.Toast = _nativeBase.Toast;
 exports.ActionSheet = _nativeBase.ActionSheet;
@@ -69,5 +71,12 @@ exports.TabHeading = _nativeBase.TabHeading;
 exports.Segment = _nativeBase.Segment;
 exports.Root = _nativeBase.Root;
 exports.SwipeRow = _nativeBase.SwipeRow;
+exports.IonIcon = _Ionicons.Icon;
 exports.ImageSequence = _reactNativeImageSequence2.default;
 exports.LinearGradient = _reactNativeLinearGradient2.default;
+exports.withNavigation = _reactNavigation.withNavigation;
+exports.NavigationActions = _reactNavigation.NavigationActions;
+exports.StackNavigator = _reactNavigation.StackNavigator;
+exports.TabNavigator = _reactNavigation.TabNavigator;
+exports.DrawerNavigator = _reactNavigation.DrawerNavigator;
+exports.addNavigationHelpers = _reactNavigation.addNavigationHelpers;

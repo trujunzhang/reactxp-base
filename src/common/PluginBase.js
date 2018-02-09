@@ -58,13 +58,8 @@ import {Icon as IonIcon} from 'react-native-vector-icons/Ionicons'
 import LinearGradient from 'react-native-linear-gradient'
 
 import {
-    withNavigation,
-    NavigationActions,
-    StackNavigator,
-    DrawerNavigator,
-    TabNavigator,
-    addNavigationHelpers
-} from 'react-navigation'
+    Navigation
+} from 'react-native-navigation'
 
 export {
     StyleProvider,
@@ -123,11 +118,6 @@ export {
     ImageSequence,
     // react-native-linear-gradient
     LinearGradient,
-    // react-navigation
-    withNavigation,
-    NavigationActions,
-    StackNavigator,
-    TabNavigator,
-    DrawerNavigator,
-    addNavigationHelpers
+    // react-native-navigation
+    Navigation
 };
